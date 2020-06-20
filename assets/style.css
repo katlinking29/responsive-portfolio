@@ -76,8 +76,13 @@ hr {
     line-height: 1.5;
  }
 
-p, .card { 
+p, .card, #github-link, #linkedin-link, #resume-link { 
     font-family: 'Dosis', sans-serif;
+}
+
+#github-link, #linkedin-link, #resume-link {
+    margin:auto;
+    margin-left: 35px;
 }
 
 /* styling specific to 'contact' page */
@@ -94,20 +99,27 @@ p, .card {
     height: 200px;
     width: 200px;
     margin: auto;
+    padding: 20px;
+    border-radius: 25px;
 }
 
 .card {
     border-radius: 25px;
 }
 
-.card-title {
+.card-title, .card-text {
     text-align: center;
+}
+
+
+#card-button {
+    margin-left: 20%;
 }
 
 /* Used media queries to adjust the height of the background color 
 of the div containing the bio on the 'About' page*/
 @media screen and (max-width: 1199px) {
-    #bio {
+    #bio, #github-link, #linkedin-link, #resume-link {
         text-align: center;
     }
 
